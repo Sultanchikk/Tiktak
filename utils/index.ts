@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const BASE_URL = "http://localhost:3000";
+export const BASE_URL = process.env.BASE_URL;
 
 export const createOrGetUser = async (response: any, addUser: any) => {
   var base64Url = response.credential.split(".")[1];
